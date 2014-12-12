@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'HackWumi' target in the 'HackWumi' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

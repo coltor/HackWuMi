@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E3625941A3AC9F7008599C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3625931A3AC9F7008599C2 /* Foundation.framework */; };
+		3E36259F1A3AC9F7008599C2 /* HackWumi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E36259E1A3AC9F7008599C2 /* HackWumi.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E3625901A3AC9F7008599C2 /* HackWumi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = HackWumi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3625931A3AC9F7008599C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3E3625981A3AC9F7008599C2 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		3E3625991A3AC9F7008599C2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		3E36259B1A3AC9F7008599C2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		3E36259C1A3AC9F7008599C2 /* HackWumi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackWumi-Prefix.pch"; sourceTree = "<group>"; };
+		3E36259D1A3AC9F7008599C2 /* HackWumi.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = HackWumi.xm; sourceTree = "<group>"; };
+		3E36259E1A3AC9F7008599C2 /* HackWumi.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HackWumi.mm; sourceTree = "<group>"; };
+		3E3625A31A3AC9F7008599C2 /* HackWumi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HackWumi.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HackWumi.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E36258C1A3AC9F7008599C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3625941A3AC9F7008599C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E3625851A3AC9F7008599C2 = {
+			isa = PBXGroup;
+			children = (
+				3E3625951A3AC9F7008599C2 /* HackWumi */,
+				3E3625921A3AC9F7008599C2 /* Frameworks */,
+				3E3625911A3AC9F7008599C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E3625911A3AC9F7008599C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625901A3AC9F7008599C2 /* HackWumi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E3625921A3AC9F7008599C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625931A3AC9F7008599C2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E3625951A3AC9F7008599C2 /* HackWumi */ = {
+			isa = PBXGroup;
+			children = (
+				3E36259D1A3AC9F7008599C2 /* HackWumi.xm */,
+				3E36259E1A3AC9F7008599C2 /* HackWumi.mm */,
+				3E3625961A3AC9F7008599C2 /* Package */,
+				3E36259A1A3AC9F7008599C2 /* Supporting Files */,
+			);
+			path = HackWumi;
+			sourceTree = "<group>";
+		};
+		3E3625961A3AC9F7008599C2 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625971A3AC9F7008599C2 /* DEBIAN */,
+				3E3625A01A3AC9F7008599C2 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		3E3625971A3AC9F7008599C2 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625981A3AC9F7008599C2 /* control.txt */,
+				3E3625991A3AC9F7008599C2 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		3E36259A1A3AC9F7008599C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E36259B1A3AC9F7008599C2 /* PackageVersion.plist */,
+				3E36259C1A3AC9F7008599C2 /* HackWumi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E3625A01A3AC9F7008599C2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625A11A3AC9F7008599C2 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		3E3625A11A3AC9F7008599C2 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625A21A3AC9F7008599C2 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		3E3625A21A3AC9F7008599C2 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				3E3625A31A3AC9F7008599C2 /* HackWumi.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E36258D1A3AC9F7008599C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E36258F1A3AC9F7008599C2 /* HackWumi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3625A61A3AC9F7008599C2 /* Build configuration list for PBXNativeTarget "HackWumi" */;
+			buildPhases = (
+				3E36258A1A3AC9F7008599C2 /* ShellScript */,
+				3E36258B1A3AC9F7008599C2 /* Sources */,
+				3E36258C1A3AC9F7008599C2 /* Frameworks */,
+				3E36258D1A3AC9F7008599C2 /* Headers */,
+				3E36258E1A3AC9F7008599C2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackWumi;
+			productName = HackWumi;
+			productReference = 3E3625901A3AC9F7008599C2 /* HackWumi.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E3625861A3AC9F7008599C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 3E3625891A3AC9F7008599C2 /* Build configuration list for PBXProject "HackWumi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E3625851A3AC9F7008599C2;
+			productRefGroup = 3E3625911A3AC9F7008599C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E36258F1A3AC9F7008599C2 /* HackWumi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E36258A1A3AC9F7008599C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		3E36258E1A3AC9F7008599C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E36258B1A3AC9F7008599C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E36259F1A3AC9F7008599C2 /* HackWumi.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E3625A41A3AC9F7008599C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		3E3625A51A3AC9F7008599C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		3E3625A71A3AC9F7008599C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackWumi/HackWumi-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		3E3625A81A3AC9F7008599C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackWumi/HackWumi-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E3625891A3AC9F7008599C2 /* Build configuration list for PBXProject "HackWumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3625A41A3AC9F7008599C2 /* Debug */,
+				3E3625A51A3AC9F7008599C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3625A61A3AC9F7008599C2 /* Build configuration list for PBXNativeTarget "HackWumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3625A71A3AC9F7008599C2 /* Debug */,
+				3E3625A81A3AC9F7008599C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E3625861A3AC9F7008599C2 /* Project object */;
+}
