@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3E3625941A3AC9F7008599C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3625931A3AC9F7008599C2 /* Foundation.framework */; };
-		3E36259F1A3AC9F7008599C2 /* HackWumi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E36259E1A3AC9F7008599C2 /* HackWumi.mm */; };
+		3E36259F1A3AC9F7008599C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E36259E1A3AC9F7008599C2 /* main.m */; };
+		3E3625B91A3AD782008599C2 /* RIButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3625B51A3AD782008599C2 /* RIButtonItem.h */; };
+		3E3625BA1A3AD782008599C2 /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3625B61A3AD782008599C2 /* RIButtonItem.m */; };
+		3E3625BB1A3AD782008599C2 /* UIAlertView+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3625B71A3AD782008599C2 /* UIAlertView+Blocks.h */; };
+		3E3625BC1A3AD782008599C2 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3625B81A3AD782008599C2 /* UIAlertView+Blocks.m */; };
+		3E3625BE1A3B0665008599C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3625BD1A3B0665008599C2 /* UIKit.framework */; };
+		3E3625C01A3B0678008599C2 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3625BF1A3B0678008599C2 /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +24,14 @@
 		3E3625991A3AC9F7008599C2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		3E36259B1A3AC9F7008599C2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		3E36259C1A3AC9F7008599C2 /* HackWumi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackWumi-Prefix.pch"; sourceTree = "<group>"; };
-		3E36259D1A3AC9F7008599C2 /* HackWumi.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = HackWumi.xm; sourceTree = "<group>"; };
-		3E36259E1A3AC9F7008599C2 /* HackWumi.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HackWumi.mm; sourceTree = "<group>"; };
+		3E36259E1A3AC9F7008599C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E3625A31A3AC9F7008599C2 /* HackWumi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HackWumi.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HackWumi.plist; sourceTree = "<group>"; };
+		3E3625B51A3AD782008599C2 /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
+		3E3625B61A3AD782008599C2 /* RIButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIButtonItem.m; sourceTree = "<group>"; };
+		3E3625B71A3AD782008599C2 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		3E3625B81A3AD782008599C2 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		3E3625BD1A3B0665008599C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3E3625BF1A3B0678008599C2 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3625C01A3B0678008599C2 /* libsubstrate.dylib in Frameworks */,
+				3E3625BE1A3B0665008599C2 /* UIKit.framework in Frameworks */,
 				3E3625941A3AC9F7008599C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +68,8 @@
 		3E3625921A3AC9F7008599C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E3625BF1A3B0678008599C2 /* libsubstrate.dylib */,
+				3E3625BD1A3B0665008599C2 /* UIKit.framework */,
 				3E3625931A3AC9F7008599C2 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -63,8 +78,11 @@
 		3E3625951A3AC9F7008599C2 /* HackWumi */ = {
 			isa = PBXGroup;
 			children = (
-				3E36259D1A3AC9F7008599C2 /* HackWumi.xm */,
-				3E36259E1A3AC9F7008599C2 /* HackWumi.mm */,
+				3E36259E1A3AC9F7008599C2 /* main.m */,
+				3E3625B51A3AD782008599C2 /* RIButtonItem.h */,
+				3E3625B61A3AD782008599C2 /* RIButtonItem.m */,
+				3E3625B71A3AD782008599C2 /* UIAlertView+Blocks.h */,
+				3E3625B81A3AD782008599C2 /* UIAlertView+Blocks.m */,
 				3E3625961A3AC9F7008599C2 /* Package */,
 				3E36259A1A3AC9F7008599C2 /* Supporting Files */,
 			);
@@ -129,6 +147,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3625BB1A3AD782008599C2 /* UIAlertView+Blocks.h in Headers */,
+				3E3625B91A3AD782008599C2 /* RIButtonItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +163,7 @@
 				3E36258B1A3AC9F7008599C2 /* Sources */,
 				3E36258C1A3AC9F7008599C2 /* Frameworks */,
 				3E36258D1A3AC9F7008599C2 /* Headers */,
-				3E36258E1A3AC9F7008599C2 /* ShellScript */,
+				3E36258E1A3AC9F7008599C2 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -193,13 +213,14 @@
 			shellPath = /bin/sh;
 			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
 		};
-		3E36258E1A3AC9F7008599C2 /* ShellScript */ = {
+		3E36258E1A3AC9F7008599C2 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E36259F1A3AC9F7008599C2 /* HackWumi.mm in Sources */,
+				3E3625BC1A3AD782008599C2 /* UIAlertView+Blocks.m in Sources */,
+				3E36259F1A3AC9F7008599C2 /* main.m in Sources */,
+				3E3625BA1A3AD782008599C2 /* RIButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +265,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +290,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -285,14 +308,18 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWumi/HackWumi-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = "";
 				iOSOpenDevInstallOnAnyBuild = NO;
-				iOSOpenDevInstallOnProfiling = YES;
-				iOSOpenDevRespringOnInstall = YES;
-				iOSOpenDevUsePackageVersionPList = YES;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
 			};
 			name = Debug;
 		};
@@ -300,19 +327,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWumi/HackWumi-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = "";
 				iOSOpenDevInstallOnAnyBuild = NO;
-				iOSOpenDevInstallOnProfiling = YES;
-				iOSOpenDevRespringOnInstall = YES;
-				iOSOpenDevUsePackageVersionPList = YES;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
 			};
 			name = Release;
 		};
@@ -335,6 +367,7 @@
 				3E3625A81A3AC9F7008599C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
